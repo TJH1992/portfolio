@@ -2,19 +2,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     <title>Portfolio</title>
     <style>
         body {
         --teal: #448885;
         --grey: #666666;
-        background-image: url("background_photo.jpg");
+        background-image: url("Assests/background_photo.jpg");
         background-repeat: repeat;
         }
 
@@ -63,6 +61,18 @@
             padding-bottom: 15px;
         }
 
+        .carousel .item {
+            height: 100px;
+        }
+
+        .item img {
+            position: absolute;
+            object-fit:cover;
+            top: 0;
+            left: 0;
+            min-height: 100px;
+        }
+
         .footer {
             position: relative;
             text-align: center;
@@ -88,12 +98,15 @@
 
         <div class="container">
             <div class="row w-100">
+    
                 <a class="navbar-brand" href="index.html">TJ Hutchinson</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-dark"></span>
                 </button>
     
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    
+                <div class="collapse navbar-collapse bg-secondary" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="index.html">About</a>
@@ -111,42 +124,47 @@
         </div>
     </nav>
 
-<div class="jumbotron bg-secondary ">
+<div class="jumbotron jumbotron-fluid bg-secondary">
   <div class="container text-center">
     <h1>My Portfolio</h1>      
     <p>Here are some projects that represent me. Links to my GitHub and Linkedin below.</p>
-    <a href="https://www.linkedin.com/in/terrance-james-hutchinson" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Linkedin</a>
-    <a href="https://github.com/TJH1992" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">GitHub</a>
+    <a href="https://www.linkedin.com/in/terrance-james-hutchinson" class="btn btn-info btn-lg active" role="button" aria-pressed="true" target="_blank">Linkedin</a>
+    <a href="https://github.com/TJH1992" class="btn btn-info btn-lg active" role="button" aria-pressed="true" target="_blank">GitHub</a>
+    <a href="Assests/Resume.pdf" class="btn btn-info btn-lg active" role="button" aria-pressed="true" target="_blank">Resume</a>
   </div>
 </div>
   
+
 <div class="container-fluid bg-3 text-center">    
   <div class="row">
-    <div class="col-sm-3 p-3 mb-2 bg-secondary text-dark">
-      <p>Photography</p>
-      <img src="Nikon.jpg" class="img-responsive" style="width:100%" alt="Image">
+    <div class="col-sm-3 p-3 mb-2">
+      <a class="nav-link text-dark bg-secondary" href="https://alicewu216.github.io/covid19-symptom-checker/" target="_blank">Covid-19 Symptom Checker</a>
+      <img src="Assests/Covid_Symptom_Checker.png" class="img-fluid" style="width:100%" alt="Image">
     </div>
-    <div class="col-sm-3 p-3 mb-2 bg-secondary text-dark"> 
-      <p>DJing</p>
-      <img src="rx2.jpg" class="img-responsive" style="width:100%" alt="Image">
+    <div class="col-sm-3 p-3 mb-2"> 
+      <a class="nav-link text-dark bg-secondary" href="https://tjh1992.github.io/Work-Day-Scheduler/" target="_blank">Work Day Scheduler</a>
+      <img src="Assests/Work_Day_Scheduler.png" class="img-responsive" style="width:100%" alt="Image">
     </div>
-    <div class="col-sm-3 p-3 mb-2 bg-secondary text-dark"> 
-      <p>Mixology</p>
-      <img src="mixology.jpg" class="img-responsive" style="width:100%" alt="Image">
+    <div class="col-sm-3 p-3 mb-2"> 
+        <a class="nav-link text-dark bg-secondary" href="https://tjh1992.github.io/Weather-Dashboard/" target="_blank">Weather Dashboard</a>
+      <img src="Assests/Weather_Dashboard.png" class="img-responsive" style="width:100%" alt="Image">
     </div>
-    <div class="col-sm-3 p-3 mb-2 bg-secondary text-dark">
-      <p>My Dog!</p>
-      <img src="meelo.png" class="img-responsive" style="width:100%" alt="Image">
+    <div class="col-sm-3 p-3 mb-2">
+        <a class="nav-link text-dark bg-secondary" href="https://tjh1992.github.io/Code_Quiz/" target="_blank">Online Code Quiz</a>
+      <img src="Assests/Code_Quiz.png" class="img-responsive" style="width:100%" alt="Image">
     </div>
   </div>
 </div><br>
 
 </div><br><br>
 
-<footer class="container-fluid text-center mt-auto py-3 bg-secondary">
+<footer class="footer mt-auto py-3 bg-secondary">
     <div class="bar"></div>
     <div class="container">
-        <span class=>&copy Copyright</span>
+        <br><span class="font-weight-bold">TJ Hutchinson</span>
+        <br><span class="font-weight-bold">Phone Number: (760) 876-0515</span>
+        <br><span class="font-weight-bold">Email: tjhutch92@gmail.com</span>
+        <br><span class=>&copy Copyright </span>
     </div>
 </footer>
 
